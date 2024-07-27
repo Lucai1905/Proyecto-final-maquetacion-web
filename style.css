@@ -73,6 +73,7 @@
         z-index: 101;
         /*para que aparezca la manito cuando ponemos el mouse encima */
         cursor: pointer;
+        display: none;
     }
 
     #menu-toggle {
@@ -119,7 +120,7 @@
         font-family: "Roboto Mono", monospace;
         font-size: 50px;
         line-height: 1;
-        s margin-top: 0 0 30px;
+        margin-top: 0 0 30px;
     }
 
     .hero-text h4 {
@@ -281,7 +282,7 @@
         .navlist {
             position: absolute;
             top: 100%;
-            right:-100%;
+            right: -100%;
             width: 200px;
             height: 180px;
             background-color: #021719ef;
@@ -296,9 +297,9 @@
             display: block;
             margin: 7;
         }
-#menu-toggle:checked + label.menu-icon-action + ul{
-    right: 0;
 
-}
+        .navlist.open{
+            right: 0;
+        }
 
     }
